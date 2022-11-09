@@ -71,11 +71,8 @@ justify-content: space-between;
   .contact:hover {
     color: #2196f3;
   }
-  .icon-mail:hover{
-    color: #2196f3;
-  }
-  .icon-smartphone:hover{
-    color: #2196f3;
+  .mail-icon{
+    fill: #2196f3;
   }
   /* Heder i ogólne body */
   .main {
@@ -172,9 +169,7 @@ justify-content: space-between;
   .teamsignature{
     background-color: #ffffff;
   }
-  .social{
-    color: #2196f3;
-  }
+ 
   /* Początek footera */
   .fotter {
     background-color: #2f303a;
