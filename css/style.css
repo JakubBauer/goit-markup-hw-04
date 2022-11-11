@@ -7,6 +7,8 @@
     --body-color:#212121;
     --textlorem-color:#757575;
     --team-color:#F5F4FA;
+    --spirt-color:#afb1b8;
+    --active-color:#2196f3;
   }
   body {
     color: var(--body-color);
@@ -37,6 +39,9 @@ justify-content: space-between;
     color: var(--name-color);
     cursor: pointer;
   }
+  .web-color{
+    color: #2196f3;
+  }
   .menu{
     display: flex;
     gap: 46px;
@@ -50,7 +55,10 @@ justify-content: space-between;
     cursor: pointer;
   }
   .item:hover {
-    color: #2196f3;
+    color: var(--active-color);
+  }
+  .item:focus{
+    color: var(--active-color);
   }
   .headercontact{
     display: inline-flex;
@@ -69,29 +77,45 @@ justify-content: space-between;
     cursor: pointer;  
   }
   .contact:hover {
-    color: #2196f3;
+    color: var(--active-color);
+  }
+  .contact:focus{
+    color: var(--active-color);
   }
   .contact-icon:hover{
-fill: #2196f3;
+fill: var(--active-color);
+  }
+  .contact-icon:focus{
+    fill: var(--active-color);
   }
   /* Heder i ogólne body */
   .main {
-    background-color: var(--main-color);
-    height: 600px;
+    max-width: 1600px;
+    padding-top: 200px;
+    padding-bottom: 200px;
+    margin: 0 auto;
+    text-align: center;
+    background-image:
+    linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),url(/images/tło-img.jpg);
+    background-size: 1600px;
+    background-repeat: no-repeat;
+    background-position: center;
    
-
   }
   .maintext {
-    display: flex;
-   align-items: center;
+    
     color: white;
     font-family: 'Roboto', sans-serif;
-    font-weight: 900;
+    font-weight: 900px;
     font-size: 44px;
     line-height: 1.36;
-   width: 1200px;
+   width: 696px;
    margin: 0 auto;
-   
+   display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+    text-transform: uppercase;
+    
   }
   .mainbutton {
     font-family: 'Roboto', sans-serif;
@@ -109,8 +133,10 @@ fill: #2196f3;
  
   }
   .lorem-icon{
-    
-    
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
   }
   .lorem{
     display: flex;
@@ -163,7 +189,17 @@ fill: #2196f3;
   }
   .imgteam{
     flex-basis: calc((100%-90px)/4);
-
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+border-radius: 0px 0px 4px 4px;
+  }
+  .imgname-team{
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 2;
+    text-align: center;
+  }
+  .text-team{
+    text-align: center;
   }
   .mi{
     max-width: 100%;
@@ -173,15 +209,53 @@ fill: #2196f3;
   .teamsignature{
     background-color: #ffffff;
   }
+  .social{
+    background-color: #ffffff;
+   fill: #afb1b8;
+  }
+  .social:hover{
+    background-color: #2196f3; border-radius: 50%;
+    fill: #ffffff;
+  }
+  .social:focus{
+    background-color: #2196f3; border-radius: 50%;
+    fill: #ffffff;
+  }
+  .our-clients{
+    text-align: center;
+  }
+  .clients{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+  }
+  .logo{
+    fill: var(--spirt-color) ;
+    border-radius: 4px;
+    border: 1px solid rgba(175, 177, 184, 1);
+    border-radius: 4px;
+  }
+  .logo:hover{
+    fill: #2196f3;
+    border-color: #2196f3;
+  }
+  .logo:focus{
+    fill: #2196f3;
+    border-color: #2196f3;
+  }
  
   /* Początek footera */
   .fotter {
     background-color: #2f303a;
   }
-  .textfotter{
+  .both{
     display: flex;
-    flex-direction: column;
+    justify-content: space-between;
 
+  }
+  .right{
   }
   .namefotter {
     text-decoration: none;
@@ -195,6 +269,9 @@ fill: #2196f3;
   .namefotter:hover {
     color: #2196f3;
   }
+  .namefotter:focus{
+    color: #2196f3;
+  }
   .location {
     color: #ffffff;
     font-size: 14px;
@@ -204,6 +281,29 @@ fill: #2196f3;
   .location:hover {
     color: #2196f3;
     cursor: pointer;
+  }
+  .location:focus{
+    color: #2196f3;
+    cursor: pointer;
+  }
+  .joinus{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1,17 ;
+    color: #ffffff;
+  }
+  .social-fotter{
+    background-color: rgba(255, 255, 255, 0.1) ; border-radius: 50%;
+    fill: #ffffff;
+  }
+  .social-fotter:hover{
+    background-color: #2196f3 ; border-radius: 50%;
+
+  }
+  .social-fotter:focus{
+    background-color: #2196f3 ; border-radius: 50%;
+
   }
   /* Tu kończy się css dla strony głównej */
   .filtrs{
@@ -225,6 +325,13 @@ fill: #2196f3;
     background-color: #2196f3;
     color: #ffffff;
     border-radius: 4px;
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+  }
+  .filtr:focus{
+    background-color: #2196f3;
+    color: #ffffff;
+    border-radius: 4px;
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
   }
   .img{
     display: flex;
@@ -233,6 +340,12 @@ fill: #2196f3;
   }
   .portfolioimg{
     flex-basis: calc((100% - 60px) / 3);
+   }
+   .portfolioimg:hover{
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+   }
+   .portfolioimg:focus{
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
    }
   .pi{
     max-width: 100%;
