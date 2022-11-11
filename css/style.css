@@ -71,8 +71,8 @@ justify-content: space-between;
   .contact:hover {
     color: #2196f3;
   }
-  .mail-icon{
-    fill: #2196f3;
+  .contact-icon:hover{
+fill: #2196f3;
   }
   /* Heder i ogólne body */
   .main {
@@ -107,6 +107,10 @@ justify-content: space-between;
     margin: 0 auto;
     
  
+  }
+  .lorem-icon{
+    
+    
   }
   .lorem{
     display: flex;
