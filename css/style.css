@@ -358,6 +358,7 @@ ul {
 }
 .portfolioimg {
   flex-basis: calc((100% - 60px) / 3);
+  max-width: 370px;
   border: 1px solid #EEEEEE;
   background-color: #FFFFFF;
   
@@ -375,11 +376,13 @@ ul {
   width: 100%;
   height: auto;
 }
-
 .imgname {
   font-weight: 700;
   font-size: 18px;
   line-height: 2;
+}
+.text{
+  padding-bottom: 20px;
 }
 .container {
   width: 1200px;
