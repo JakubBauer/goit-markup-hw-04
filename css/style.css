@@ -354,6 +354,7 @@ ul {
     0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 .img {
+  padding-top: 56px;
   max-width: 1200px;
   width: 1200px;
   margin: 0 auto;
@@ -366,6 +367,7 @@ ul {
   flex-basis: calc((100% - 60px) / 3);
   border: 1px solid #eEEEEE;
   background-color: #FFFFFF;
+  box-sizing: border-box;
 }
 .portfolioimg:hover {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
