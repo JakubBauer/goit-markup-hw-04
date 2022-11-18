@@ -328,6 +328,7 @@ ul {
   gap: 8px;
   justify-content: center;
   border-bottom: #ffffff;
+  padding-bottom: 50px;
 }
 .filtr {
   font-weight: 500;
@@ -354,20 +355,21 @@ ul {
     0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 .img {
-  padding-top: 56px;
+  padding-top: 50px;
   max-width: 1200px;
   width: 1200px;
   margin: 0 auto;
   display: flex;
   flex-wrap: wrap;
   gap: 30px;
-  flex-basis: calc((100% - 60px) / 3);
+  padding: 0;
 }
 .portfolioimg {
   flex-basis: calc((100% - 60px) / 3);
   border: 1px solid #eEEEEE;
   background-color: #FFFFFF;
   box-sizing: border-box;
+
 }
 .portfolioimg:hover {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
@@ -376,6 +378,9 @@ ul {
 .portfolioimg:focus {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
     1px 4px 6px rgba(0, 0, 0, 0.16);
+}
+.fit{
+  margin: 0;
 }
 
 .pi {
@@ -387,6 +392,10 @@ ul {
   font-weight: 700;
   font-size: 18px;
   line-height: 2;
+  padding-left: 24px;
+}
+.text{
+  padding-left: 24px;
 }
 .container {
   width: 1200px;
