@@ -359,6 +359,8 @@ ul {
   display: flex;
   flex-wrap: wrap;
   gap: 30px;
+  height: 100%;
+  width: 100%;
   object-fit: cover;
 }
 .portfolioimg {
@@ -379,12 +381,6 @@ ul {
   max-width: 100%;
   width: 370px;
   height: auto;
-}
-.pi > img{
-  display: block;
-  height: 100%;
-  width: 100%;
-  object-fit: cover ;
 }
 .imgname {
   font-weight: 700;
